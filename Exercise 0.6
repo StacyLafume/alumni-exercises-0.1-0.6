@@ -1,0 +1,11 @@
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/spa.
+server-->browser: HTTP status code 302
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa./main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa./main.js
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa./json
+server-->browser: main.js
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa./data.json
+server-->browser: [{...},{...},{...}]
+end note
